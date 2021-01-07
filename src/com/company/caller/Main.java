@@ -7,10 +7,17 @@ import com.company.selling.Kasse;
 public class Main {
 
     public static void main(String[] args) {
-       Kasse.refreshGesamtpreis();
-       Kasse.getProduct(1,5);
-       Kasse.getProduct(2,4);
-        System.out.println(Kasse.getGesamtPrice());
+        System.out.println(Kasse.sayAboutAShop);
+        System.out.println();
+
+        Kasse.getProduct(1,4);
+        Kasse.getProduct(2,3);
+        Kasse.sayTheTotalPreis();
+
+        Kasse.sayAboutPayment(Kasse.askAboutaPayment());
+
+
+
 
 
     }
