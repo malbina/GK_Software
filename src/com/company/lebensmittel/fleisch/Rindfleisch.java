@@ -41,4 +41,12 @@ public class Rindfleisch  extends AbstractLebensmittel {
         return "Name of product:"+getName()+
         "\n Price of product:"+getPrice()+" Euro"+ "\nWeight of product:"+getWeight()+" g";
     }
+    public  static void  createObject (int amount){
+        Rindfleisch rind []= new Rindfleisch[amount];
+        for(int i =0 ; i<rind.length;i++){
+            rind[i]=new Rindfleisch();
+            System.out.println(rind[i]+" ");
+        }
+    }
+
 }

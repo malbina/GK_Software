@@ -2,28 +2,29 @@ package com.company.lebensmittel.getränke;
 
 import com.company.lebensmittel.AbstractLebensmittel;
 
-public class Cola  extends AbstractLebensmittel {
+public class Fanta extends AbstractLebensmittel {
 
     private int amountOfpack;
-    private static int amountOfCola;
+    private static int amountOfFanta;
 
     static {
-        setAmountOfCola(89);
+        setAmountOfFanta(78);
     }
 
     {
-        setName("Cola");
+        setName("Fanta");
         setWeight(1.0);
-        setPrice(1.80);
+        setPrice(1.76);
 
     }
 
-    public Cola() {
+    public Fanta() {
     }
 
-    public Cola(int amountOfpack) {
+    public Fanta(int amountOfpack) {
         setAmountOfpack(this.amountOfpack);
     }
+
 
     public int getAmountOfpack() {
         return amountOfpack;
@@ -33,12 +34,12 @@ public class Cola  extends AbstractLebensmittel {
         this.amountOfpack = amountOfpack;
     }
 
-    public static int getAmountOfCola() {
-        return amountOfCola;
+    public static int getAmountOfFanta() {
+        return amountOfFanta;
     }
 
-    public static void setAmountOfCola(int amountOfCola) {
-        Cola.amountOfCola = amountOfCola;
+    public static void setAmountOfFanta(int amountOfFanta) {
+        Fanta.amountOfFanta = amountOfFanta;
     }
 
     @Override

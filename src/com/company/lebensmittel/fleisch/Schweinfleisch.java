@@ -13,7 +13,7 @@ public class Schweinfleisch extends AbstractLebensmittel {
 
     }
     static {
-        setAmountOfPork(30233);
+        setAmountOfPork(302);
     }
      public Schweinfleisch (){}
     public Schweinfleisch (int amountOfPack){
