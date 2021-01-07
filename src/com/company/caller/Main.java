@@ -7,7 +7,7 @@ import com.company.selling.Kasse;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(Kasse.sayAboutAShop);
+        System.out.println("\n"+Kasse.sayAboutAShop);
         System.out.println();
 
         Kasse.getProduct(1,4);

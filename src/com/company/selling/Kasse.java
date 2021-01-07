@@ -31,7 +31,7 @@ public class Kasse {
         System.out.println("Zahlung erfolgt");
         System.out.println("Vielen Dank für Ihren Einkauf");
         if (isAPaymentByCash) {
-            System.out.println("Kartenzahlung \n" + "\nKontaktlos" + "\ngirocard");
+            System.out.println("Kartenzahlung" + "\nKontaktlos" + "\ngirocard");
         } else {
             System.out.println("Bargeld");
         }
@@ -56,10 +56,12 @@ public class Kasse {
                 Kasse.gesamtPrice += rind.getPrice() * amount;
                 break;
             case 2:
-                Schweinfleisch schweinfleisch = new Schweinfleisch(amount);
-                System.out.println(schweinfleisch.getName() + "     " + "Preis: " + schweinfleisch.getPrice() + "   Anzahl der Menge " + amount);
-                Kasse.gesamtPrice += schweinfleisch.getPrice() * amount;
+                Schweinfleisch schwein = new Schweinfleisch(amount);
+                System.out.println(schwein.getName()+ "     " + "Preis: " + schwein.getPrice() + "   Anzahl der Menge " + amount);
+                Kasse.gesamtPrice += schwein.getPrice() * amount;
                 break;
+
+
 
 
             default:
@@ -72,7 +74,8 @@ public class Kasse {
         Kasse.gesamtPrice=0;
    }
    public static void sayTheTotalPreis(){
-       System.out.println(Kasse.gesamtPrice);
+       System.out.printf("Gesamtpreis: %.2f",Kasse.gesamtPrice);
+       System.out.println();
        refreshGesamtpreis();
    }
 }
